@@ -13,7 +13,7 @@ const Resources = () => {
   const [loading, setLoading] = useState(true);
   const [resources, setResources] = useState(null);
 
-  const endpoint = `${baseUrl}/resources?_embed`;
+  const endpoint = `${baseUrl}/resources?_embed&per_post=100`;
 
   useEffect(() => {
     axios.get(endpoint)
