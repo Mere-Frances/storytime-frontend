@@ -6,7 +6,7 @@ import { CartContext } from '../context/CartContext';
 import Seo from '../components/Seo';
 
 const SingleProduct = () => {
-    const [mainImage, setMainImage] = useState("/src/assets/Pepeha-Book-1001x1024.webp");
+    const [mainImage, setMainImage] = useState("/section-imgs/Pepeha-Book-1001x1024.webp");
     const [clickedIndex, setClickedIndex] = useState(null);
     const { addToCart } = useContext(CartContext);
 
