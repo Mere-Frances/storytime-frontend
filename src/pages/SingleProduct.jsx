@@ -13,8 +13,8 @@ const SingleProduct = () => {
     const galleryImages = [
         "/section-imgs/Storytime-Pepeha-Book.jpg",
         "/section-imgs/Storytime-Pepeha-Both-Sides-Flat.webp",
-        "/section-imgs/src//Pepeha-in-Cloth-Bag-Front.webp",
-        "/section-imgs/src//Pepeha-in-Cloth-Bag-Back.webp",
+        "/section-imgs/Pepeha-in-Cloth-Bag-Front.webp",
+        "/section-imgs/Pepeha-in-Cloth-Bag-Back.webp",
         "/section-imgs/Pepeha-Book-1001x1024.webp",
     ];
 

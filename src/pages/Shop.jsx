@@ -16,7 +16,7 @@ const Shop = () => {
       name: 'Pepeha Book',
       price: 19.90,
       quantity: 1,
-      images: [{ src: '/section-imgs/Storytime-Pepeha-Book.jpg' }],
+      images: { src: '/section-imgs/Storytime-Pepeha-Book.jpg' },
     });
   };
 
@@ -63,7 +63,7 @@ const Shop = () => {
                   <IoAddOutline />
                 </a>
                 <Link to='/shop/singlepage' className='single-post-container'>
-                  <img src='/src/assets/Storytime-Pepeha-Book.jpg' alt='Pepeha Book' />
+                  <img src='/section-imgs/Storytime-Pepeha-Book.jpg' alt='Pepeha Book' />
                 </Link>
                 <h3>Pepeha Book</h3>
                 <h3>$19.90 NZD</h3>
