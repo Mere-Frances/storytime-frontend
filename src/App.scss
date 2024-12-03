@@ -2052,6 +2052,7 @@ footer {
 
   .work-matters--section{
     .blob-shapes--container{
+      width: 100%;
       .blob{
         height: 20rem;
         width: 22rem;
@@ -2061,6 +2062,7 @@ footer {
 
   .blob-shapes--container{
     flex-direction: column;
+    width: 100%;
   }
 
   .content-section{
