@@ -11,7 +11,7 @@ const SingleProduct = () => {
     const { addToCart } = useContext(CartContext);
 
     const galleryImages = [
-        "/src/assets/Storytime-Pepeha-Book.jpg",
+        "./src/assets/Storytime-Pepeha-Book.jpg",
         "/src/assets/Storytime-Pepeha-Both-Sides-Flat.webp",
         "/src/assets/Pepeha-in-Cloth-Bag-Front.webp",
         "/src/assets/Pepeha-in-Cloth-Bag-Back.webp",
