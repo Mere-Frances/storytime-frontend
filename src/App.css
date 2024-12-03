@@ -494,6 +494,7 @@ nav .sticky {
 }
 .work-matters--section .blob-shapes--container {
   display: flex;
+  width: 100%;
 }
 .work-matters--section .blob-shapes--container .blob {
   position: relative;
@@ -1682,6 +1683,10 @@ footer .footer-sponsors img {
   width: auto;
 }
 
+.blob-shapes--container {
+  width: 100%;
+}
+
 @media (max-width: 1300px) {
   h1 {
     font-size: 130px;
@@ -1809,12 +1814,16 @@ footer .footer-sponsors img {
   .hero-header .hero-overlay .home-header-title h3 {
     width: 70%;
   }
+  .work-matters--section .blob-shapes--container {
+    width: 100%;
+  }
   .work-matters--section .blob-shapes--container .blob {
     height: 20rem;
     width: 22rem;
   }
   .blob-shapes--container {
     flex-direction: column;
+    width: 100%;
   }
   .content-section .section-content--container {
     padding: 4rem 2rem;
