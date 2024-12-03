@@ -12,14 +12,15 @@ const ProductList = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await wooCommerceApi.get('/products');
-                setProducts(response.data);
-                setLoading(false);
+              const response = await wooCommerceApi.get('/products');
+              console.log('API Response:', response.data); // Log the response
+              setProducts(response.data);
+              setLoading(false);
             } catch (error) {
-                console.error('Error fetching products:', error);
+              console.error('Error fetching products:', error);
             }
-        };
-        fetchProducts();
+          };
+          fetchProducts();
     }, []);
 
     const handleAddToCart = (product) => {
