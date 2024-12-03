@@ -16,7 +16,7 @@ const Shop = () => {
       name: 'Pepeha Book',
       price: 19.90,
       quantity: 1,
-      images: [{ src: '/src/assets/Storytime-Pepeha-Book.jpg' }],
+      images: [{ src: '/section-imgs/Storytime-Pepeha-Book.jpg' }],
     });
   };
 

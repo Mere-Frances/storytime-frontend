@@ -11,11 +11,11 @@ const SingleProduct = () => {
     const { addToCart } = useContext(CartContext);
 
     const galleryImages = [
-        "/assets/Storytime-Pepeha-Book.jpg",
-        "/src/assets/Storytime-Pepeha-Both-Sides-Flat.webp",
-        "/src/assets/Pepeha-in-Cloth-Bag-Front.webp",
-        "/src/assets/Pepeha-in-Cloth-Bag-Back.webp",
-        "/src/assets/Pepeha-Book-1001x1024.webp",
+        "/section-imgs/Storytime-Pepeha-Book.jpg",
+        "/section-imgs/Storytime-Pepeha-Both-Sides-Flat.webp",
+        "/section-imgs/src//Pepeha-in-Cloth-Bag-Front.webp",
+        "/section-imgs/src//Pepeha-in-Cloth-Bag-Back.webp",
+        "/section-imgs/Pepeha-Book-1001x1024.webp",
     ];
 
     const filters = {
