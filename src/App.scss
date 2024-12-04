@@ -34,6 +34,19 @@ $color6: #45C82B;
   border-radius: 3rem;
 }
 
+::-moz-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #FF5733;
+  border-radius: 3rem;
+}
+
+::-moz-scrollbar-track {
+  background-color: transparent;
+}
+
 h1 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   text-transform: uppercase;
