@@ -1,17 +1,41 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
+import axios from 'axios';
 
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io";
 
+const baseUrl = import.meta.env.VITE_WP_BASEURL;
+
 const Footer = () => {
+  const [logoUrl, setLogoUrl] = useState('');
+
+  useEffect(() => {
+    const fetchNavLogo = async () => {
+      try {
+        const response = await axios.get(`${baseUrl}wp-json/custom/v1/nav-logo`);
+        if (response.status === 200) {
+          const data = response.data;
+          setLogoUrl(data[0]);
+        } else {
+          console.error('Failed to fetch logo URL');
+        }
+      } catch (error) {
+        console.error('Error fetching logo', error);
+      }
+    };
+
+    fetchNavLogo();
+  }, []);
+
+
   return (
     <footer>
       <div className='footer-content--container'>
 
         <div className='footer-main-content'>
           <NavLink to='/' className='logo'>
-            Wordpress
+            <img src={logoUrl} alt="Website Logo" />
           </NavLink>
           <p>Storytime Foundation provides free books, education, and resources to 
           New Zealand’s most vulnerable whānau in partnership with Tamariki Ora/Pēpi 

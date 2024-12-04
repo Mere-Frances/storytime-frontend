@@ -2054,6 +2054,7 @@ footer {
   }
 
   .work-matters--section{
+    padding: 3rem 2rem 0;
     .blob-shapes--container{
       width: 100%;
       .blob{
@@ -2228,6 +2229,7 @@ footer {
     height: 100%;
     .product-preview--details{
       border-radius: 5rem;
+      width: 80%;
       img{
         display: none;
       }
@@ -2307,6 +2309,9 @@ footer {
         }
       }
     }
+    .nav-links{
+      bottom: 2rem;
+    }
   }
 
   .work-matters--section{
@@ -2375,6 +2380,15 @@ footer {
   }
   .work-matters--section p {
     width: 90%;
+  }
+
+  .hero-header{
+    .hero-overlay{
+      background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 90%);
+      .home-header-title h3{
+        width: 90%;
+      }
+    }
   }
 
   .home-header{
@@ -2482,8 +2496,18 @@ footer {
   }
 
   .product-preview--container{
+    padding: 1rem;
     .product-preview--details{
       border-radius: 2rem;
+      width: 90%;
+      .product-preview--titles{
+        width: 90%;
+      }
+      .single-page-descriptions{
+        .product-dynamic-content{
+          width: 100%;
+        }
+      }
     }
   }
 

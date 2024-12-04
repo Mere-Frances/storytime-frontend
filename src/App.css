@@ -1813,6 +1813,9 @@ footer .footer-sponsors img {
   .hero-header .hero-overlay .home-header-title h3 {
     width: 70%;
   }
+  .work-matters--section {
+    padding: 3rem 2rem 0;
+  }
   .work-matters--section .blob-shapes--container {
     width: 100%;
   }
@@ -1961,6 +1964,7 @@ footer .footer-sponsors img {
   }
   .product-preview--container .product-preview--details {
     border-radius: 5rem;
+    width: 80%;
   }
   .product-preview--container .product-preview--details img {
     display: none;
@@ -2028,6 +2032,9 @@ footer .footer-sponsors img {
   nav .primary-nav--container .logo img {
     transform: scale(0.5);
   }
+  nav .nav-links {
+    bottom: 2rem;
+  }
   .work-matters--section {
     padding: 4rem 2rem 0 2rem;
   }
@@ -2075,6 +2082,12 @@ footer .footer-sponsors img {
     font-size: 20px;
   }
   .work-matters--section p {
+    width: 90%;
+  }
+  .hero-header .hero-overlay {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 90%);
+  }
+  .hero-header .hero-overlay .home-header-title h3 {
     width: 90%;
   }
   .home-header {
@@ -2151,8 +2164,18 @@ footer .footer-sponsors img {
   .product-section .product-display--container {
     padding: 8rem 3rem 3rem 3rem;
   }
+  .product-preview--container {
+    padding: 1rem;
+  }
   .product-preview--container .product-preview--details {
     border-radius: 2rem;
+    width: 90%;
+  }
+  .product-preview--container .product-preview--details .product-preview--titles {
+    width: 90%;
+  }
+  .product-preview--container .product-preview--details .single-page-descriptions .product-dynamic-content {
+    width: 100%;
   }
   .donation-info--container img {
     width: 90%;
