@@ -2363,3 +2363,165 @@ footer {
   }
 
  }
+
+ @media (max-width: 390px) {
+
+  h1{
+    font-size: 50px;
+  }
+
+  .nav-links li a{
+    font-size: 20px;
+  }
+  .work-matters--section p {
+    width: 90%;
+  }
+
+  .home-header{
+    background-size: contain;
+    .home-header--content--container{
+      padding: 4rem 1rem;
+      .button-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .work-matters--section{
+    .blob-shapes--container{
+      flex-direction: column;
+    }
+  }
+
+  .content-section{
+    .section-content--container{
+      padding: 2rem 2rem;
+      .content-details{
+        flex-direction: column;
+        .content-section--image{
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .sponsor-section{
+    padding: 1rem 2rem;
+    .sponsors-logos{
+      padding: 1rem 0;
+    }
+  }
+
+  .testimonial-section{
+    .carousel-container{
+      #carousel{
+        .single-post-container{
+          overflow-y: scroll;
+        }
+        .prev, .next, .prevLeftSecond, .nextRightSecond{
+          height: 16rem;
+          width: 25rem;
+        }
+        .selected{
+          height: 20rem;
+        }
+      }
+    }
+  }
+
+  .single-page--container{
+    .single-page{
+      .single-page--content{
+        padding: 1rem 2rem 3rem 2rem;
+        p{
+          column-count: 1;
+        }
+        li{
+          font-size: 18px;
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+      .single-page--header{
+        .single-page--header--titles{
+          padding: 6rem 1rem;
+          h2, h3{
+            width: 80%;
+          }
+        }
+      }
+      padding-bottom: 3rem;
+    }
+  }
+
+  .populated-posts{
+    .single-post-container{
+      border: 4px;
+    }
+  }
+
+  .shop-products--container{
+    .populated-posts{
+      .post-container{
+        justify-content: center;
+        padding: 1rem 1rem 5rem 1rem;
+        .quick-link{
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .product-section{
+    .product-display--container{
+      padding: 8rem 3rem 3rem 3rem;
+    }
+  }
+
+  .product-preview--container{
+    .product-preview--details{
+      border-radius: 2rem;
+    }
+  }
+
+  .donation-info--container{
+    img{
+      width: 90%;
+    }
+  }
+
+  .contact-form--container{
+    padding: 1rem 1rem 5rem 1rem;
+    form{
+      .form-row{
+        gap: 2rem;
+      }
+      label{
+        input{
+          padding: 1rem;
+          font-size: 18px;
+        }
+      }
+      .primary-button{
+        border: 4px solid $white;
+      }
+    }
+  }
+
+  .blue-section h3{
+    padding: 0 2rem;
+  }
+
+  .checkout-products--container{
+    .cart-section--container{
+      padding: 0 2rem;
+      .instructions-section textarea{
+        max-width: 80vw;
+      }
+    }
+  }
+
+ }

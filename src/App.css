@@ -2066,4 +2066,117 @@ footer .footer-sponsors img {
   .testimonial-section .carousel-container #carousel .selected {
     width: 20rem;
   }
+}
+@media (max-width: 390px) {
+  h1 {
+    font-size: 50px;
+  }
+  .nav-links li a {
+    font-size: 20px;
+  }
+  .work-matters--section p {
+    width: 90%;
+  }
+  .home-header {
+    background-size: contain;
+  }
+  .home-header .home-header--content--container {
+    padding: 4rem 1rem;
+  }
+  .home-header .home-header--content--container .button-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .work-matters--section .blob-shapes--container {
+    flex-direction: column;
+  }
+  .content-section .section-content--container {
+    padding: 2rem 2rem;
+  }
+  .content-section .section-content--container .content-details {
+    flex-direction: column;
+  }
+  .content-section .section-content--container .content-details .content-section--image {
+    width: 70%;
+  }
+  .sponsor-section {
+    padding: 1rem 2rem;
+  }
+  .sponsor-section .sponsors-logos {
+    padding: 1rem 0;
+  }
+  .testimonial-section .carousel-container #carousel .single-post-container {
+    overflow-y: scroll;
+  }
+  .testimonial-section .carousel-container #carousel .prev, .testimonial-section .carousel-container #carousel .next, .testimonial-section .carousel-container #carousel .prevLeftSecond, .testimonial-section .carousel-container #carousel .nextRightSecond {
+    height: 16rem;
+    width: 25rem;
+  }
+  .testimonial-section .carousel-container #carousel .selected {
+    height: 20rem;
+  }
+  .single-page--container .single-page {
+    padding-bottom: 3rem;
+  }
+  .single-page--container .single-page .single-page--content {
+    padding: 1rem 2rem 3rem 2rem;
+  }
+  .single-page--container .single-page .single-page--content p {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .single-page--container .single-page .single-page--content li {
+    font-size: 18px;
+  }
+  .single-page--container .single-page .single-page--content li a {
+    font-size: 18px;
+  }
+  .single-page--container .single-page .single-page--header .single-page--header--titles {
+    padding: 6rem 1rem;
+  }
+  .single-page--container .single-page .single-page--header .single-page--header--titles h2, .single-page--container .single-page .single-page--header .single-page--header--titles h3 {
+    width: 80%;
+  }
+  .populated-posts .single-post-container {
+    border: 4px;
+  }
+  .shop-products--container .populated-posts .post-container {
+    justify-content: center;
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  .shop-products--container .populated-posts .post-container .quick-link {
+    width: 60%;
+  }
+  .product-section .product-display--container {
+    padding: 8rem 3rem 3rem 3rem;
+  }
+  .product-preview--container .product-preview--details {
+    border-radius: 2rem;
+  }
+  .donation-info--container img {
+    width: 90%;
+  }
+  .contact-form--container {
+    padding: 1rem 1rem 5rem 1rem;
+  }
+  .contact-form--container form .form-row {
+    gap: 2rem;
+  }
+  .contact-form--container form label input {
+    padding: 1rem;
+    font-size: 18px;
+  }
+  .contact-form--container form .primary-button {
+    border: 4px solid #FFFFFF;
+  }
+  .blue-section h3 {
+    padding: 0 2rem;
+  }
+  .checkout-products--container .cart-section--container {
+    padding: 0 2rem;
+  }
+  .checkout-products--container .cart-section--container .instructions-section textarea {
+    max-width: 80vw;
+  }
 }/*# sourceMappingURL=App.css.map */
