@@ -6,6 +6,19 @@
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E64AAF;
+  border-radius: 3rem;
+}
+
 h1 {
   font-family: "M PLUS Rounded 1c", sans-serif;
   text-transform: uppercase;
@@ -1054,6 +1067,9 @@ nav .sticky {
   top: 114%;
   align-items: center;
 }
+#carousel .single-post-container {
+  overflow-y: scroll;
+}
 
 #carousel .single-post-container:nth-child(1) {
   border: solid #FFB524;
@@ -1733,6 +1749,21 @@ footer .footer-sponsors img {
   .shop-products--container .populated-posts .post-container .quick-link {
     width: 50%;
   }
+  .testimonial-section .carousel-container #carousel .single-post-container {
+    height: 27rem;
+    width: 35rem;
+  }
+  .testimonial-section .carousel-container #carousel .next, .testimonial-section .carousel-container #carousel .prev {
+    height: 24rem;
+    width: 30rem;
+  }
+  .testimonial-section .carousel-container #carousel .nextRightSecond, .testimonial-section .carousel-container #carousel .prevLeftSecond {
+    height: 20rem;
+    width: 28rem;
+  }
+  .testimonial-section .carousel-container .buttons {
+    padding-top: 2rem;
+  }
 }
 @media (max-width: 1024px) {
   h1 {
@@ -1876,6 +1907,16 @@ footer .footer-sponsors img {
   }
   .testimonial-section .carousel-container #carousel .selected {
     width: 25rem;
+  }
+  .testimonial-section .carousel-container #carousel .single-post-container {
+    height: 24rem;
+    width: 25rem;
+  }
+  .testimonial-section .carousel-container #carousel .next, .testimonial-section .carousel-container #carousel .prev {
+    height: 20rem;
+  }
+  .testimonial-section .carousel-container #carousel .nextRightSecond, .testimonial-section .carousel-container #carousel .prevLeftSecond {
+    height: 17rem;
   }
   figure {
     padding: 0;

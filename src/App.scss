@@ -21,6 +21,19 @@ $color4: #BD72DF;
 $color5: #4FB7F9;
 $color6: #45C82B;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 3rem;
+}
+
 h1 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   text-transform: uppercase;
@@ -1231,6 +1244,9 @@ nav {
   height: 60vh;
   top: 114%;
   align-items: center;
+  .single-post-container{
+    overflow-y: scroll;
+  }
 }
 
 #carousel .single-post-container:nth-child(1) {
@@ -1961,6 +1977,29 @@ footer {
       }
     }
   }
+
+  .testimonial-section{
+    .carousel-container{
+      #carousel{
+        .single-post-container{
+          height: 27rem;
+          width: 35rem;
+        }
+        .next, .prev{
+          height: 24rem;
+          width: 30rem;
+        }
+        .nextRightSecond, .prevLeftSecond{
+          height: 20rem;
+          width: 28rem;
+        }
+      }
+      .buttons{
+        padding-top: 2rem;
+      }
+    }
+  }
+  
 }
 
 @media (max-width: 1024px) {
@@ -2122,6 +2161,16 @@ footer {
       #carousel{
         .selected{
           width: 25rem;
+        }
+        .single-post-container{
+          height: 24rem;
+          width: 25rem;
+        }
+        .next, .prev{
+          height: 20rem;
+        }
+        .nextRightSecond, .prevLeftSecond{
+          height: 17rem;
         }
       }
     }
