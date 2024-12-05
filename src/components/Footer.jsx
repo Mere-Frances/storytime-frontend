@@ -104,13 +104,13 @@ const Footer = () => {
       <h4>© 2024 Storytime Foundation</h4>
 
       <div className='footer-sponsors'>
-        <img src='/sponsors/baytrust-small.png'/>
-        <img src='/sponsors/foundationnorth-small.png'/>
-        <img src='/sponsors/lotto-small.png'/>
-        <img src='/sponsors/ratafoundation-small.png'/>
-        <img src='/sponsors/teraupuawai-small.png'/>
-        <img src='/sponsors/tindallfoundation-small.png'/>
-        <img src='/sponsors/rotoruatrust-small.png'/>
+        <img src='/sponsors/baytrust-small.png' alt='Bay Trust'/>
+        <img src='/sponsors/foundationnorth-small.png' alt='Foundation North'/>
+        <img src='/sponsors/lotto-small.png' alt='Lotto'/>
+        <img src='/sponsors/ratafoundation-small.png' alt='Rata Foundation'/>
+        <img src='/sponsors/teraupuawai-small.png' alt='Te Rau Puawai'/>
+        <img src='/sponsors/tindallfoundation-small.png' alt='Tindall Foundation'/>
+        <img src='/sponsors/rotoruatrust-small.png' alt='Rotorua Trust' />
       </div>
     </footer>
   )

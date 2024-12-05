@@ -45,7 +45,7 @@ const ContentReveal = () => {
                     key={name}
                     className="blob"
                 >
-                <img src={profiles[name].img_url} alt=''/>
+                <img src={profiles[name].img_url} alt={profiles[name].name}/>
                 </div>
                 <h3>{profiles[name].name}</h3>
                 <p>{profiles[name].position}</p>

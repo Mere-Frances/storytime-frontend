@@ -21,7 +21,6 @@ const Resources = () => {
         setResources(res.data);
         setLoading(false);
       })
-      .catch((err) => console.log(err));
   }, []);
 
   const truncateContent = (content) => {
@@ -75,6 +74,7 @@ const Resources = () => {
       />
       <PageHeader
         img_url='/header-bg-imgs/resources-header.jpg'
+        alt='kid reading a book'
         surtitle=''
         title={
           <>

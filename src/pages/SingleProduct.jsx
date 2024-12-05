@@ -85,7 +85,7 @@ const SingleProduct = () => {
 
         <section className='product-preview--container'>
             <div className='product-preview--details'>
-                <img src='/section-imgs/blob-svg-2.png'/>
+                <img src='/section-imgs/blob-svg-2.png' alt='blob'/>
                     <ContentReveal filters={filters}/>
                 <img/>
             </div>

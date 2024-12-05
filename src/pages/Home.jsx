@@ -79,6 +79,7 @@ const Home = () => {
             <ContentSection 
             title='Strengthening Whānau' 
             img_url='/section-imgs/blog-img-two-kids-reading.png' 
+            alt='two kids reading'
             paragraph={
                 <> 
                 Storytime Foundation helps to strengthen whānau facing adversity in Aotearoa by supporting the building of bonds between a parent and child.
@@ -95,6 +96,7 @@ const Home = () => {
                 className='blue-section'
                 title='Supporting Whānau' 
                 img_url='/section-imgs/blob-father-daughter-reading.png' 
+                alt='father and daughter reading'
                 paragraph={
                     <>
                     Storytime Foundation works with vulnerable whānau around Aotearoa to help them build strong bonds with their tamariki.
@@ -110,6 +112,7 @@ const Home = () => {
             <ContentSection 
                 title='Te Tiriti o Waitangi' 
                 img_url='/section-imgs/kid-reading.png' 
+                alt='kid reading'
                 paragraph={
                     <>
                     At Storytime Foundation we are committed to honouring Te Tiriti o Waitangi in an ongoing journey of learning through our vision, goals, and everyday practices aimed at supporting whānau to thrive.
@@ -125,7 +128,8 @@ const Home = () => {
             <ContentSection  
                 className='pink-section'
                 title='Building bonds with books' 
-                img_url='/section-imgs/mother-and-child-reading.png' 
+                img_url='/section-imgs/mother-and-child-reading.png'
+                alt='mother and child reading' 
                 paragraph={
                     <>
                     For many whānau around New Zealand it can be challenging to access the knowledge and resources needed to build the bonds of early attachment. Storytime Foundation’s book-focused programmes provide the tools to help, in turn building more cohesive families and improving social outcomes.
@@ -138,7 +142,7 @@ const Home = () => {
 
         <section className='product-preview--container'>
             <div className='product-preview--details'>
-                <img src='/section-imgs/blob-svg.svg'/>
+                <img src='/section-imgs/blob-svg.svg' alt='blob shape'/>
                 <div className='product-preview--titles'>
                     <h2>Give one, get one</h2>
                     <p>Our first title, the Pepeha Cloth Book, is available now. And for every book you buy, we will gift a second one to another family. We call it ‘Give One, Get One’.</p>

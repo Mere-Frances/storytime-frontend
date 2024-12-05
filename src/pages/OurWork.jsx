@@ -58,6 +58,7 @@ const OurWork = () => {
         <ContentSection 
           title='About our work' 
           img_url='/section-imgs/mother-and-child-reading-2.png' 
+          alt='moth and child reading'
           paragraph={
             <> 
             Research shows that establishing these bonds of security and connection can help both children and their parents/caregivers to reduce stress and process emotions better, and to improve overall family cohesion.

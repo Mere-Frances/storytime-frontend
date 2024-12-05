@@ -13,6 +13,7 @@ const Donate = () => {
     />
       <PageHeader
         img_url='/header-bg-imgs/donate-header.jpg'
+        alt='child reading'
         surtitle=''
         title={
           <>

@@ -21,6 +21,7 @@ const Resource = () => {
         setResource(res.data);
         setLoading(false);
       })
+      .catch((err) => console.log(err));
   }, [endpoint]);
 
   useEffect(() => {
