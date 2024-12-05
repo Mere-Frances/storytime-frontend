@@ -13,11 +13,9 @@ const ProductList = () => {
         const fetchProducts = async () => {
             try {
               const response = await wooCommerceApi.get('/products');
-              console.log('API Response:', response.data);
               setProducts(response.data);
               setLoading(false);
             } catch (error) {
-              console.error('Error fetching products:', error);
             }
           };
           fetchProducts();

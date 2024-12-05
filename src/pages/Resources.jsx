@@ -31,25 +31,41 @@ const Resources = () => {
     return firstSentence + (textOnly.length > firstSentence.length ? "" : "");
   };
 
-  const filterResourcesByTopic = (topicName) => {
-    return resources.filter((resource) =>
-      resource.class_list && resource.class_list.some((classItem) => classItem.includes(topicName))
+  const filterResourcesByCategory = (resources, topicName) => {
+    const validTopics = ["topic-resources", "topic-research", "topic-links"];
+  
+    if (validTopics.includes(topicName)) {
+      return resources.filter(
+        (resource) =>
+          resource.class_list &&
+          resource.class_list.some((classItem) => classItem.includes(topicName))
+      );
+    }
+  
+    return resources.filter(
+      (resource) =>
+        resource.class_list &&
+        !resource.class_list.some((classItem) =>
+          validTopics.some((validTopic) => classItem.includes(validTopic))
+        )
     );
-  }
-
+  };
+  
+  
   const MappedResources = ({ topicName }) => {
-    const filterResources = filterResourcesByTopic(topicName);
-
+    const filterResources = filterResourcesByCategory(resources, topicName);
+  
     return filterResources.map((resource, index) => (
       <a href={`#/resources/${resource.id}`} key={resource.slug + "-" + index} className='single-post-container'>
         <h3 className='title'>{truncateContent(resource.title.rendered)}</h3>
         <p>{truncateContent(resource.content.rendered)}</p>
         <div className='container-button'>
-        <div className='secondary-button card-arrow' href={`#/resources/${resource.id}`}><IoArrowForward /></div>
+          <div className='secondary-button card-arrow' href={`#/resources/${resource.id}`}><IoArrowForward /></div>
         </div>
       </a>
     ));
   };
+  
 
   return (
     <>
@@ -138,6 +154,24 @@ const Resources = () => {
             )}
           </div>
         </section>
+
+        <section className='populated-posts resources-sections'>
+          <ContentSection 
+            title='Other Topics' 
+            includeSvg={false}
+          />
+          <div id="homeCont" className='post-container'>
+            {loading ? (
+              <div className='loader'>
+                <h3>Loading</h3>
+                <div className="custom-loader"></div>
+              </div>
+            ) : (
+              <MappedResources topicName="other" />
+            )}
+          </div>
+        </section>
+
 
         <div className='category-container'></div>
       </section>

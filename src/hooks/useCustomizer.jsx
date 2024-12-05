@@ -18,9 +18,6 @@ const useCustomizer = () => {
             setMobileMenu(mobileMenu);
             setNavColor(navbarColor);
         })
-        .catch((error) => {
-            console.error('Error fetching customizer settings: ', error)
-        })
   }, [baseUrl]);
 
   return {bgColor, fontFamily, mobileMenu, navColor};

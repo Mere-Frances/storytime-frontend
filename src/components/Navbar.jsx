@@ -43,10 +43,10 @@ const Navbar = () => {
           const data = response.data;
           setLogoUrl(data[0]);
         } else {
-          console.error('Failed to fetch logo URL');
+
         }
       } catch (error) {
-        console.error('Error fetching logo', error);
+
       }
     };
 
